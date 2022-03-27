@@ -74,6 +74,7 @@ export const NavLinks = styled(LinkS)`
   }
   &:hover {
     color: #0066cc;
+    transition: 0.3s ease-out;
   }
 `;
 

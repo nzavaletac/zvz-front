@@ -98,7 +98,8 @@ const NavBar = ({ toggle }) => {
               </NavItem>
             </NavMenu>
             <NavBtn>
-              <NavBtnLink to="contact-us">Contáctenos</NavBtnLink>
+              {/* <NavBtnLink to="contact-us">Contáctenos</NavBtnLink> */}
+              <NavBtnLink to="contact-us">+51 993 645 977</NavBtnLink>
             </NavBtn>
           </NavbarContainer>
         </Nav>
