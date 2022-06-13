@@ -8,6 +8,15 @@ export const Title = styled.h1`
   width: 100%;
   text-align: center;
   text-transform: uppercase;
+  /* &::after {
+    content: "";
+    color: #0071e3;
+    display: block;
+    margin: 12px 0 0;
+    width: 52px;
+    height: 3px;
+    background: #0071e3;
+  } */
 `;
 
 export const Container = styled.div`
@@ -38,6 +47,7 @@ export const Section = styled.section`
   text-align: center;
   justify-content: center;
   margin: 20px 15px;
+  /* box-shadow: #aaa 0px 0px 3px; */
   @media screen and (max-width: 768px) {
     margin: 10px 0px;
   }
