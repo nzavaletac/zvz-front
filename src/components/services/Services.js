@@ -20,7 +20,6 @@ export const Services = () => {
       <TitleContainer>
         <Title>Nuestros Servicios</Title>
       </TitleContainer>
-
       <Container>
         <Section>
           <ContainerImg>

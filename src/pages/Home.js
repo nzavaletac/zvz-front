@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Clientes } from "../components/clientes/Clientes";
 import Footer from "../components/footer/Footer";
 import Hero from "../components/hero/Hero";
 import NavBar from "../components/navbar/NavBar";
@@ -18,7 +19,7 @@ const Home = () => {
       <NavBar toggle={toggle} />
       <Hero />
       <Services />
-
+      <Clientes />
       <Footer />
     </>
   );
