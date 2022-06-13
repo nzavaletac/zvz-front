@@ -28,8 +28,8 @@ const Hero = () => {
       <HeroContent>
         <Hero1>¡Bienvenido! a Zvz Consulting Group</Hero1>
         <HeroP>
-          Brindamos servicios contables, laboral y tributario para Micro y
-          Pequeña empresa. Te ayudamos a tomar las mejores decisiones
+          Brindamos servicio contable, tributario y laboral para Micro y Pequeña
+          empresa. Te ayudamos a tomar las mejores decisiones.
         </HeroP>
         <HeroBtnWrapper>
           <Button

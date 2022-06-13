@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Blog from "../components/blog/Blog";
-import { Contact } from "../components/contact/Contact";
 import Footer from "../components/footer/Footer";
 import Hero from "../components/hero/Hero";
 import NavBar from "../components/navbar/NavBar";
