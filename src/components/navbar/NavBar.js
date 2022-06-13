@@ -3,7 +3,6 @@ import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { animateScroll as scroll } from "react-scroll";
 import {
-  Logo,
   MobileIcon,
   Nav,
   NavbarContainer,
@@ -14,7 +13,6 @@ import {
   NavLogo,
   NavMenu,
 } from "./NavBarElements";
-import logo from "../../images/logo.jpeg";
 
 const NavBar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -41,7 +39,6 @@ const NavBar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
-              {/* <Logo src={logo} /> */}
               ZVZ Group
             </NavLogo>
             <MobileIcon onClick={toggle}>
