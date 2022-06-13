@@ -23,7 +23,14 @@ const Hero = () => {
   return (
     <HeroContainer>
       <HeroBg>
-        <VideoBg autoPlay loop muted src={Video} typeof="video/mp4" />
+        <VideoBg
+          autoPlay
+          loop
+          muted
+          playsInline
+          src={Video}
+          typeof="video/mp4"
+        />
       </HeroBg>
       <HeroContent>
         <Hero1>¡Bienvenido! a Zvz Consulting Group</Hero1>
