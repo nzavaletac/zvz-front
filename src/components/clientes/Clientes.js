@@ -20,7 +20,7 @@ import img7 from "../../images/clientes/7.jpg";
 
 export const Clientes = () => {
   return (
-    <>
+    <div id="clientes">
       <TitleContainer>
         <Title>Nuestros Clientes</Title>
       </TitleContainer>
@@ -42,6 +42,6 @@ export const Clientes = () => {
           </ContainerImg>
         </Section>
       </ContainerBody>
-    </>
+    </div>
   );
 };

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import Blog from "../components/blog/Blog";
 import { Clientes } from "../components/clientes/Clientes";
+import { Contact } from "../components/contact/Contact";
 import Footer from "../components/footer/Footer";
 import Hero from "../components/hero/Hero";
 import NavBar from "../components/navbar/NavBar";
@@ -20,6 +22,8 @@ const Home = () => {
       <Hero />
       <Services />
       <Clientes />
+      <Blog />
+      <Contact />
       <Footer />
     </>
   );

@@ -1,10 +1,11 @@
 import React from "react";
+import { Container } from "./BlogElements";
 
 const Blog = () => {
   return (
-    <div>
+    <Container id="blog">
       <h1>Hello from React - Blog</h1>
-    </div>
+    </Container>
   );
 };
 

@@ -16,7 +16,7 @@ import img3 from "../../images/img3.svg";
 
 export const Services = () => {
   return (
-    <>
+    <div id="services">
       <TitleContainer>
         <Title>Nuestros Servicios</Title>
       </TitleContainer>
@@ -95,6 +95,6 @@ export const Services = () => {
           </BodyServices>
         </Section>
       </Container>
-    </>
+    </div>
   );
 };

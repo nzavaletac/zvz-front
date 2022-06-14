@@ -70,10 +70,11 @@ export const NavLinks = styled(LinkS)`
   height: 100%;
   cursor: pointer;
   &.active {
-    border-bottom: 3px solid #000;
+    border-bottom: 3px solid #0071e3;
+    color: #0071e3;
   }
   &:hover {
-    color: #0066cc;
+    color: #0071e3;
     transition: 0.3s ease-out;
   }
 `;
