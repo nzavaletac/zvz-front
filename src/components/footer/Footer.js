@@ -74,8 +74,19 @@ const Footer = () => {
               ZVZ Group © {new Date().getFullYear()} All rights reserved.
             </WebsiteRights>
             <SocialIcons>
-              <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+              <SocialIconLink
+                href="https://web.facebook.com/zvzgroup/?_rdc=1&_rdr"
+                target="_blank"
+                aria-label="Facebook"
+              >
                 <FaFacebook />
+              </SocialIconLink>
+              <SocialIconLink
+                href="https://www.linkedin.com/company/zvz-consulting-group-sac"
+                target="_blank"
+                aria-label="Linkedin"
+              >
+                <FaLinkedin />
               </SocialIconLink>
               <SocialIconLink href="/" target="_blank" aria-label="Instagram">
                 <FaInstagram />
@@ -89,9 +100,6 @@ const Footer = () => {
                 aria-label="Twitter"
               >
                 <FaTwitter />
-              </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Linkedin">
-                <FaLinkedin />
               </SocialIconLink>
             </SocialIcons>
           </SocialMediaWrap>

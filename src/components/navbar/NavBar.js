@@ -7,12 +7,13 @@ import {
   Nav,
   NavbarContainer,
   NavBtn,
-  NavBtnLink,
+  NavBtnLinkA,
   NavItem,
   NavLinks,
   NavLogo,
   NavMenu,
 } from "./NavBarElements";
+import { RiWhatsappFill } from "react-icons/ri";
 
 const NavBar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -32,6 +33,9 @@ const NavBar = ({ toggle }) => {
   const toggleHome = () => {
     scroll.scrollToTop();
   };
+
+  const urlWhatsapp =
+    "https://api.whatsapp.com/send/?phone=51993645977&text=¡Hola!+ZVZ Group+ - Me gustaria obtener más información sobre el servicio contable.";
 
   return (
     <>
@@ -95,8 +99,9 @@ const NavBar = ({ toggle }) => {
               </NavItem>
             </NavMenu>
             <NavBtn>
-              {/* <NavBtnLink to="contact-us">Contáctenos</NavBtnLink> */}
-              <NavBtnLink to="contact-us">+51 993 645 977</NavBtnLink>
+              <NavBtnLinkA href={urlWhatsapp} target="_blank">
+                +51 993 645 977
+              </NavBtnLinkA>
             </NavBtn>
           </NavbarContainer>
         </Nav>

@@ -22,7 +22,7 @@ export const Clientes = () => {
   return (
     <div id="clientes">
       <TitleContainer>
-        <Title>Nuestros Clientes</Title>
+        <Title>Ellos Confian en nosotros</Title>
       </TitleContainer>
       <ContainerBody>
         <Section>
