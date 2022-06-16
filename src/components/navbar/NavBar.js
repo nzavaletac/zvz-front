@@ -72,7 +72,7 @@ const NavBar = ({ toggle }) => {
                   Clientes
                 </NavLinks>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                 <NavLinks
                   to="blog"
                   smooth={true}
@@ -83,7 +83,7 @@ const NavBar = ({ toggle }) => {
                 >
                   Blog
                 </NavLinks>
-              </NavItem>
+              </NavItem> */}
               <NavItem>
                 <NavLinks
                   to="contact"
