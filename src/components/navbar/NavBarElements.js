@@ -9,7 +9,7 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -128,6 +128,7 @@ export const NavBtnLinkA = styled.a`
   background: #0071e3;
   white-space: nowrap;
   padding: 10px 22px;
+  margin: 0px 5px;
   color: #fff;
   font-size: 16px;
   outline: none;

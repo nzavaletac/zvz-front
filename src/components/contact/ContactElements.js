@@ -21,7 +21,7 @@ export const Title = styled.h1`
 export const Section = styled.section`
   width: 45%;
   height: 90%;
-  padding: 100px 50px;
+  padding: 50px 50px;
   background-color: #fafafa;
 
   @media screen and (max-width: 768px) {
@@ -39,6 +39,7 @@ export const Section = styled.section`
 
 export const SubtitleForm = styled.h3`
   text-align: center;
+  font-size: 23px;
 `;
 
 export const Form = styled.form`

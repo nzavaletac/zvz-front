@@ -13,7 +13,6 @@ import {
   NavLogo,
   NavMenu,
 } from "./NavBarElements";
-import { RiWhatsappFill } from "react-icons/ri";
 
 const NavBar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -102,6 +101,7 @@ const NavBar = ({ toggle }) => {
               <NavBtnLinkA href={urlWhatsapp} target="_blank">
                 +51 993 645 977
               </NavBtnLinkA>
+              <NavBtnLinkA type="email">info@zvzgroup.com</NavBtnLinkA>
             </NavBtn>
           </NavbarContainer>
         </Nav>

@@ -9,6 +9,7 @@ import {
   SubtitleForm,
   TextArea,
 } from "./ContactElements";
+import "./Contact.css";
 
 export const Contact = () => {
   return (
@@ -20,13 +21,69 @@ export const Contact = () => {
         <Section>
           <SubtitleForm>Vamos a trabajar juntos</SubtitleForm>
           <Form>
-            <Input type="text" placeholder="Nombres y Apellidos" />
-            <Input type="email" placeholder="Email" />
-            <Input type="text" placeholder="Empresa" />
-            <Input type="text" placeholder="Ruc" />
-            <Input type="text" placeholder="Teléfono" />
-            <TextArea type="textarea" placeholder="Mensaje" />
-            <button>Enviar Mensaje</button>
+            <div className="container">
+              <Input
+                className="container__input"
+                type="text"
+                name="name"
+                placeholder="Nombres y Apellidos"
+              />
+              <label className="container__label">Nombres y Apellidos</label>
+            </div>
+            <div className="container">
+              <Input
+                className="container__input"
+                type="email"
+                name="email"
+                placeholder="Email"
+              />
+              <label className="container__label">Email</label>
+            </div>
+            <div className="container">
+              <Input
+                className="container__input"
+                type="text"
+                name="empresa"
+                placeholder="Empresa"
+              />
+              <label className="container__label">Empresa</label>
+            </div>
+            <div className="container">
+              <Input
+                className="container__input"
+                type="text"
+                name="ruc"
+                placeholder="Ruc"
+              />
+              <label className="container__label">Ruc</label>
+            </div>
+            <div className="container">
+              <Input
+                className="container__input"
+                type="text"
+                name="telefono"
+                placeholder="Teléfono"
+              />
+              <label className="container__label">Teléfono</label>
+            </div>
+            <div className="container">
+              <TextArea
+                className="container__input"
+                type="textarea"
+                name="mensaje"
+                placeholder="Mensaje"
+              />
+              <label className="container__label">Mensaje</label>
+            </div>
+
+            <div className="container__button">
+              <button className="learn-more" type="submit">
+                <span className="circle" aria-hidden="true">
+                  <span className="icon arrow"></span>
+                </span>
+                <span className="button-text">Enviar</span>
+              </button>
+            </div>
           </Form>
         </Section>
         <Section>

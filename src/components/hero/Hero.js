@@ -40,7 +40,7 @@ const Hero = () => {
         </HeroP>
         <HeroBtnWrapper>
           <Button
-            to="contact-us"
+            to="contact"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary="true"
