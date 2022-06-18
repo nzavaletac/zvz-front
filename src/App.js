@@ -14,7 +14,7 @@ function App() {
       <MessengerCustomerChat
         pageId="109544380864461"
         appId="476838759574500"
-        language="es-PE	"
+        language="es_PE	"
       />
       ,
     </>
