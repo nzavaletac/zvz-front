@@ -12,8 +12,8 @@ function App() {
         </Routes>
       </Router>
       <MessengerCustomerChat
-        pageId="109544380864461"
-        appId="476838759574500"
+        pageId={process.env.PAGE_ID}
+        appId={process.env.APP_ID}
         language="es_ES	"
       />
       ,
