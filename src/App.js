@@ -11,7 +11,11 @@ function App() {
           <Route path="/" element={<Home />} />
         </Routes>
       </Router>
-      <MessengerCustomerChat pageId="109544380864461" appId="476838759574500" />
+      <MessengerCustomerChat
+        pageId="109544380864461"
+        appId="476838759574500"
+        language="es-PE	"
+      />
       ,
     </>
   );
