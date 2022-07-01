@@ -6,6 +6,7 @@ export const Container = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  background-color: #fafafa;
 `;
 
 export const TitleContainer = styled.div`
@@ -21,8 +22,7 @@ export const Title = styled.h1`
 export const Section = styled.section`
   width: 45%;
   height: 90%;
-  padding: 50px 50px;
-  background-color: #fafafa;
+  padding: 10px 50px;
 
   @media screen and (max-width: 768px) {
     height: auto;
