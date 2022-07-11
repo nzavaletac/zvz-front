@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import Swal from "sweetalert2";
 import {
   Container,
   Form,
@@ -10,8 +11,46 @@ import {
   TextArea,
 } from "./ContactElements";
 import "./Contact.css";
+import { postMessage } from "../../services/Message.Services";
+import "react-toastify/dist/ReactToastify.css";
+
+const initialState = {
+  nameLastName: "",
+  email: "",
+  company: "",
+  ruc: "",
+  phone: "",
+  mensaje: "",
+};
 
 export const Contact = () => {
+  const [form, setForm] = useState(initialState);
+
+  const handleChange = (e) => {
+    const valor = e.target.value;
+    setForm({
+      ...form,
+      [e.target.name]: valor,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    postMessage(form).then((data) => {
+      if (!data._id) {
+        setForm(initialState);
+        Swal.fire({
+          title: "Registro ¡correcto!",
+          text: "Tus datos fueron enviados correctamente. Muy pronto nos estaremos comunicando con usted.",
+          icon: "success",
+          timer: "3000",
+          iconColor: "#0071e3",
+          confirmButtonColor: "#0071e3",
+        });
+      }
+    });
+  };
+
   return (
     <div id="contact">
       <TitleContainer>
@@ -20,13 +59,15 @@ export const Contact = () => {
       <Container>
         <Section>
           <SubtitleForm>Vamos a trabajar juntos</SubtitleForm>
-          <Form>
+          <Form onSubmit={handleSubmit}>
             <div className="container">
               <Input
                 className="container__input"
                 type="text"
-                name="name"
+                name="nameLastName"
                 placeholder="Nombres y Apellidos"
+                onChange={handleChange}
+                value={form.nameLastName}
               />
               <label className="container__label">Nombres y Apellidos</label>
             </div>
@@ -36,6 +77,8 @@ export const Contact = () => {
                 type="email"
                 name="email"
                 placeholder="Email"
+                onChange={handleChange}
+                value={form.email}
               />
               <label className="container__label">Email</label>
             </div>
@@ -43,8 +86,10 @@ export const Contact = () => {
               <Input
                 className="container__input"
                 type="text"
-                name="empresa"
+                name="company"
                 placeholder="Empresa"
+                onChange={handleChange}
+                value={form.company}
               />
               <label className="container__label">Empresa</label>
             </div>
@@ -54,6 +99,8 @@ export const Contact = () => {
                 type="text"
                 name="ruc"
                 placeholder="Ruc"
+                onChange={handleChange}
+                value={form.ruc}
               />
               <label className="container__label">Ruc</label>
             </div>
@@ -61,8 +108,10 @@ export const Contact = () => {
               <Input
                 className="container__input"
                 type="text"
-                name="telefono"
+                name="phone"
                 placeholder="Teléfono"
+                onChange={handleChange}
+                value={form.phone}
               />
               <label className="container__label">Teléfono</label>
             </div>
@@ -72,6 +121,8 @@ export const Contact = () => {
                 type="textarea"
                 name="mensaje"
                 placeholder="Mensaje"
+                onChange={handleChange}
+                value={form.mensaje}
               />
               <label className="container__label">Mensaje</label>
             </div>

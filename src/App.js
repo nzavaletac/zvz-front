@@ -2,6 +2,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import MessengerCustomerChat from "react-messenger-customer-chat";
+import { Blog } from "./pages/Blog";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/blog" element={<Blog />} />
         </Routes>
       </Router>
     </>
