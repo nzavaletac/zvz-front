@@ -52,7 +52,7 @@ export const Contact = () => {
   };
 
   return (
-    <div id="contact">
+    <div style={{ marginTop: "100px" }} id="contact">
       <TitleContainer>
         <Title>Contáctenos</Title>
       </TitleContainer>

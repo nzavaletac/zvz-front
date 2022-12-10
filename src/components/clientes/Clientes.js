@@ -20,7 +20,7 @@ import img7 from "../../images/clientes/7.jpg";
 
 export const Clientes = () => {
   return (
-    <div id="clientes">
+    <div style={{ marginTop: "100px" }} id="clientes">
       <TitleContainer>
         <Title>Ellos Confian en nosotros</Title>
       </TitleContainer>
