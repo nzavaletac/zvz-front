@@ -11,6 +11,7 @@ import {
   FooterContainer,
   FooterWrap,
   SocialIconLink,
+  LinkDeveloper,
   SocialIcons,
   SocialLogo,
   SocialMedia,
@@ -32,6 +33,13 @@ const Footer = () => {
             </SocialLogo>
             <WebsiteRights>
               ZVZ Group © {new Date().getFullYear()} All rights reserved.
+              Desarrollado por{" "}
+              <LinkDeveloper
+                href="https://nzavaletac.vercel.app"
+                target="_blank"
+              >
+                nzavaletac
+              </LinkDeveloper>
             </WebsiteRights>
             <SocialIcons>
               <SocialIconLink

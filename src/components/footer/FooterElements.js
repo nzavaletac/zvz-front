@@ -111,3 +111,11 @@ export const SocialIconLink = styled.a`
   color: #fff;
   font-size: 24px;
 `;
+
+export const LinkDeveloper = styled.a`
+  color: #fff;
+  text-decoration: none;
+  &:hover {
+    color: #0071e3;
+  }
+`;
