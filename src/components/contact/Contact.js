@@ -59,7 +59,7 @@ export const Contact = () => {
       <Container>
         <Section>
           <SubtitleForm>Vamos a trabajar juntos</SubtitleForm>
-          <Form onSubmit={handleSubmit}>
+          <Form action="https://formsubmit.co/info@zvzgroup.com" method="POST">
             <div className="container">
               <Input
                 className="container__input"
@@ -126,6 +126,9 @@ export const Contact = () => {
               />
               <label className="container__label">Mensaje</label>
             </div>
+            <input type="hidden" name="_next" value="https://zvzgroup.com/" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
 
             <div className="container__button">
               <button className="learn-more" type="submit">
